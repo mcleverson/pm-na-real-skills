@@ -1,0 +1,4 @@
+interface:
+  display_name: "Challenge Product Problem"
+  short_description: "Desafia problemas de produto antes da solução"
+  default_prompt: "Use esta skill para desafiar e melhorar minha definição de problema sem propor soluções."
