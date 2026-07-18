@@ -1,0 +1,5 @@
+interface:
+  display_name: "Identify Underserved Needs"
+  short_description: "Identifica necessidades potencialmente mal atendidas"
+  default_prompt: "Use esta skill para transformar dores e evidências em necessidades candidatas e avaliar quais estão mal atendidas."
+
