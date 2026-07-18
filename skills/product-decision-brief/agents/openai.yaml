@@ -1,0 +1,5 @@
+interface:
+  display_name: "Product Decision Brief"
+  short_description: "Cria e revisa PDBs enxutos ou completos"
+  default_prompt: "Use esta skill para criar um Product Decision Brief. Pergunte se desejo o modo enxuto ou completo quando eu não indicar."
+
