@@ -10,7 +10,7 @@ Esta coleção aplica princípios do [PM na Real](https://pmnareal.com.br) em fl
 |---|---|---|
 | [Challenge Product Problem](skills/challenge-product-problem/SKILL.md) | Desafia uma definição de problema antes que o time avance para solução, priorização ou investimento | Disponível |
 | [Identify Underserved Needs](skills/identify-underserved-needs/SKILL.md) | Identifica e avalia necessidades potencialmente mal atendidas | Disponível |
-| Product Decision Brief | Estrutura decisões de produto e sua preparação para execução | Planejada |
+| [Product Decision Brief](skills/product-decision-brief/SKILL.md) | Cria e revisa PDBs enxutos ou completos | Disponível |
 
 ## Challenge Product Problem
 
