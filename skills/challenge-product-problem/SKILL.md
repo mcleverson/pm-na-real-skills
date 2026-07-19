@@ -1,6 +1,6 @@
 ---
 name: challenge-product-problem
-description: Desafiar e melhorar definições, hipóteses e rascunhos de problemas de produto antes que o time avance para solução, priorização ou investimento. Usar quando o usuário pedir para avaliar se um problema está claro, identificar sintomas, causas presumidas ou soluções disfarçadas, questionar evidências de discovery, preparar um problema para priorização ou receber uma análise crítica de Product Leadership. Não usar para propor funcionalidades, MVPs, tecnologias, roadmaps ou soluções.
+description: Desafiar, pontuar e melhorar definições, hipóteses e rascunhos de problemas de produto antes que o time avance para solução, priorização ou investimento. Usar quando o usuário pedir para avaliar se um problema está claro, aplicar Problem Scoring, identificar sintomas, causas presumidas ou soluções disfarçadas, questionar evidências de discovery, preparar um problema para priorização ou receber uma análise crítica de Product Leadership. Não usar para propor funcionalidades, MVPs, tecnologias, roadmaps ou soluções.
 ---
 
 # Challenge Product Problem
@@ -62,28 +62,36 @@ Classificar cada afirmação relevante como:
 
 Não promover uma hipótese a evidência por ela parecer razoável.
 
-### 4. Avaliar a qualidade
+### 4. Avaliar pelo Problem Scoring
 
-Avaliar somente com o material disponível:
+Avaliar os sete critérios abaixo com uma nota de 1 a 10:
 
-- clareza do problema;
-- usuário afetado;
-- contexto de ocorrência;
-- relevância da dor;
-- impacto;
-- frequência;
-- urgência;
-- alcance;
-- qualidade das evidências;
-- presença de solução escondida.
+| Critério | O que avaliar |
+|---|---|
+| Dor do usuário | Relevância da dor, consequências de não resolvê-la e motivação para buscar alternativa |
+| Tamanho do mercado | Quantidade potencial de pessoas ou empresas afetadas e capacidade de justificar investimento |
+| Alcance | Abrangência do problema dentro do público-alvo e variedade de perfis ou situações afetadas |
+| Urgência | Necessidade de resolução, perdas imediatas e capacidade do usuário de conviver com o problema |
+| Impacto | Efeito sobre tempo, dinheiro, conversão, produtividade, confiança, satisfação ou resultado do negócio |
+| Confiança nas evidências | Qualidade de dados, entrevistas, observações, reclamações ou outros sinais concretos apresentados |
+| Entendimento do problema | Clareza sobre quem sofre, contexto, causas, sintomas e presença de solução escondida |
 
 Para cada critério, informar:
 
-- avaliação: forte, parcial, fraca ou não avaliável;
-- confiança: alta, média ou baixa;
+- nota de 1 a 10;
+- confiança na nota: alta, média ou baixa;
 - justificativa baseada exclusivamente nas entradas.
 
-Não atribuir notas numéricas. Não calcular médias.
+A falta de informação não autoriza estimativas favoráveis. Quando não houver evidência suficiente, atribuir nota baixa ou conservadora, indicar confiança baixa e explicitar a lacuna. Não usar conhecimento geral de mercado como se fosse evidência fornecida pelo usuário.
+
+Depois da tabela, calcular a média aritmética simples das sete notas, com uma casa decimal, e classificar:
+
+| Média | Classificação |
+|---|---|
+| 9 a 10 | Excelente candidato para Discovery |
+| 7 a 8,9 | Promissor, mas ainda precisa de validação |
+| 5 a 6,9 | Existem muitas incertezas |
+| Abaixo de 5 | Não recomendaria investir neste problema neste momento |
 
 ### 5. Apontar riscos
 
@@ -121,6 +129,19 @@ Classificar o problema em um único estado:
 
 Justificar o estado. Não interpretar a classificação como autorização para construir uma solução.
 
+### 9. Dar a recomendação final
+
+Encerrar com uma recomendação única e explícita, coerente com a média, a qualidade das evidências e o estado atual:
+
+| Recomendação | Quando usar |
+|---|---|
+| Avançar para Discovery | Problema forte o suficiente para aprofundamento, sem autorizar construção |
+| Avançar com ressalvas | Problema promissor, mas existem validações obrigatórias antes de priorizar investimento |
+| Não priorizar ainda | Incertezas relevantes impedem comparação ou investimento responsável |
+| Não recomendar investimento neste momento | Problema fraco, mal definido ou sem sustentação suficiente |
+
+Informar, em seguida, as condições objetivas que poderiam mudar a recomendação. Não recomendar uma solução.
+
 ## Formato de resposta
 
 Usar a estrutura abaixo. Omitir linhas vazias ou explicações redundantes, mas não omitir seções.
@@ -138,9 +159,12 @@ Usar a estrutura abaixo. Omitir linhas vazias ou explicações redundantes, mas 
 | Informação | Classificação | Observação |
 |---|---|---|
 
-## 4. Avaliação
-| Critério | Avaliação | Confiança | Justificativa |
+## 4. Problem Scoring
+| Critério | Nota | Confiança | Justificativa |
 |---|---|---|---|
+
+**Média:** [0,0]
+**Classificação:** [classificação correspondente]
 
 ## 5. Principais alertas
 [Alertas priorizados]
@@ -153,6 +177,9 @@ Usar a estrutura abaixo. Omitir linhas vazias ou explicações redundantes, mas 
 
 ## 8. Estado atual
 [Estado e justificativa]
+
+## 9. Recomendação final
+[Recomendação única, justificativa e condições para mudança]
 ```
 
 ## Restrições absolutas
@@ -160,6 +187,6 @@ Usar a estrutura abaixo. Omitir linhas vazias ou explicações redundantes, mas 
 - Nunca propor solução, funcionalidade, produto, aplicativo, plataforma, automação ou tecnologia.
 - Nunca propor MVP, arquitetura, experimento de solução ou roadmap.
 - Nunca inventar evidências ou completar lacunas silenciosamente.
-- Nunca atribuir nota numérica sem dados. Esta skill não executa Problem Scoring.
+- Nunca inventar uma nota ou atribuí-la sem justificativa. Executar o Problem Scoring somente com as informações fornecidas e penalizar a ausência de evidências.
 - Nunca concluir que vale investir apenas porque a dor parece plausível.
 - Se o usuário pedir uma solução, explicar brevemente que esta etapa avalia somente o problema e oferecer concluir primeiro a análise.
