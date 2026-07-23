@@ -5,7 +5,7 @@ description: Transformar dores, reclamações, comportamentos, observações, en
 
 # Identify Underserved Needs
 
-Aplicar o Método PM na Real para identificar necessidades candidatas e avaliar seu nível de atendimento sem transformar suposições em conclusões. Diferenciar uma necessidade plausível de uma necessidade comprovadamente mal atendida.
+Identificar necessidades candidatas e avaliar seu nível de atendimento sem transformar suposições em conclusões. Diferenciar uma necessidade plausível de uma necessidade comprovadamente mal atendida.
 
 ## Princípios
 
